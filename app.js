@@ -10,16 +10,17 @@ app.get("/", function(req, res){
 // "/bye" => "Goodbye!"
 app.get("/bye", function(req, res){
   res.send("Goodbye!");
-})
+});
+
 // "/dog" => "Meow!"
 app.get("/dog", function(req, res){
   console.log("I'm here");
   res.send("Meow!");
-})
+});
 
 // Catch all rout for those that don't exist
 app.get("*", function(req, res){
-  res.send("Nope, ");
+  res.send("You're a star");
 });
 
 // Tell Express to listen for request (start server)
